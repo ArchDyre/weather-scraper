@@ -42,7 +42,7 @@ $weather_Array = "";
                  // assaign JSON data
                 $weather_Array = json_decode($url_Contents,true);
                  
-                $displayMessage = "<div class='alert alert-success text-center'>".$city_Name." currently has <strong>".
+                $displayMessage = "<div class='alert alert-success text-center'><strong>".$city_Name."</strong> currently has <strong>".
                     $weather_Array['weather'][0]["description"]."</strong> with a <strong>Minimum Temperature of ".ceil($weather_Array['main']['temp_min']).
                     "&deg; </strong> and a <strong>Maximum Temperature of ".ceil($weather_Array['main']['temp_max'])."&deg;</strong </div>";
                  
